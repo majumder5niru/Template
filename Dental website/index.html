@@ -2,22 +2,36 @@
 <html>
 	<head>
 		<title></title>
+		<link href="css/bar/bar.css" rel="stylesheet" type="text/css" />
+		<link href="css/dark/dark.css" rel="stylesheet" type="text/css" />
+		<link href="css/default/default.css" rel="stylesheet" type="text/css" />
+		<link href="css/light/light.css" rel="stylesheet" type="text/css" />
+		<link href="css/nivo-slider.css" rel="stylesheet" type="text/css" />
 		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+		<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
 		<div class="fix main">
 			<div class="fix header">
-				<img src="images/logo.jpg" alt="">
+				<img src="images/logo.jpg" alt=""/>
 			</div>
 			<div class="fix slider">
-				<div class="slider_text">
-					<h2>Private and NHS Dentist</h2>
-					<h1>with a smile</h1>
-					<p>Dr. Nirupm Mjumder</p>
+				<div class="slider-wrapper theme-light">
+					<div class="nivoSlider" id="slider">
+						<img src="images/nemo.jpg" alt="" title="This site developed by Nirupam Majumder">
+						<img src="images/toystory.jpg" alt="">
+						<img src="images/up.jpg" alt="" title="#htmlcaption">
+						<img src="images/walle.jpg" alt="">
+					</div>
+					<div class="nivo-html-caption" id="htmlcaption">
+						<p>The site is developed by Nirupam</p>
+					</div>
 				</div>
 			</div>
 			<div class="fix maincontent">
 				<div class="fix sidebar">
+					<h2>Site Navigation</h2>
 					<ul>
 						<li><a href="">Home</a></li>
 						<li><a href="">About</a></li>
@@ -40,5 +54,12 @@
 				<p>&copy; Nirupam Majumder 2015</p>
 			</div>
 		</div>
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('#slider').nivoSlider();
+			});
+    </script> 
 	</body>
 </html>
